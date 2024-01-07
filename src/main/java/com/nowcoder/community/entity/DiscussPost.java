@@ -11,7 +11,6 @@ import java.util.Date;
  * @create： 2023/11/10 00:15
  */
 @Data
-@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder

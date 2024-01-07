@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
 
+// Alpha 为测试演练数据
 @Controller
 @RequestMapping("/alpha")
 public class AlphaController {
@@ -29,6 +30,7 @@ public class AlphaController {
         return "Hello Spring Boot.";
     }
 
+//    测试 可以被成功访问
     @RequestMapping("/data")
     @ResponseBody
     public String getData() {

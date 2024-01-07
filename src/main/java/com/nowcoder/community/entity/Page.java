@@ -5,8 +5,11 @@ package com.nowcoder.community.entity;
  * @author： wuying23
  * @create： 2023/11/12 21:01
  */
+// 封装分页相关信息
 public class Page {
-    // 当前页码
+    /*
+    当前页码
+     */
     private int current = 1;
     // 显示上限
     private int limit = 10;
