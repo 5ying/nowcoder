@@ -1,5 +1,6 @@
 package com.nowcoder.community.contorller;
 
+import com.nowcoder.community.annocation.LoginRequired;
 import com.nowcoder.community.entity.User;
 import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CommunityUtil;
@@ -44,7 +45,7 @@ public class UserController {
     @Autowired
     private HostHold hostHolder;
 
-
+    @LoginRequired
     @RequestMapping(path = "/setting",method = RequestMethod.GET)
     public String getSettingPage() {
         return "/site/setting";
@@ -57,6 +58,7 @@ public class UserController {
      * @param model
      * @return
      */
+    @LoginRequired
     @RequestMapping(path = "/upload", method = RequestMethod.POST)
     public String uploadHeader(MultipartFile headerImage, Model model) {
         if (headerImage == null) {
@@ -100,7 +102,8 @@ public class UserController {
         // 文件后缀
         String suffix = fileName.substring(fileName.lastIndexOf("."));
         // 响应图片
-        response.setContentType("image/" + suffix);
+        response.setContentType("image/" + suffix)
+        ;
         try (
                 FileInputStream fis = new FileInputStream(fileName);
                 OutputStream os = response.getOutputStream();
