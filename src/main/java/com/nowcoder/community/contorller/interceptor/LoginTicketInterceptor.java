@@ -6,6 +6,7 @@ import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CookieUtil;
 import com.nowcoder.community.util.HostHold;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -18,6 +19,7 @@ import java.util.Date;
  * @author： wuying23
  * @create： 2024/1/13 20:06
  */
+@Component
 public class LoginTicketInterceptor implements HandlerInterceptor {
 
     @Autowired

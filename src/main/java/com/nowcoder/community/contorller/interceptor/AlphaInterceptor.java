@@ -1,5 +1,6 @@
 package com.nowcoder.community.contorller.interceptor;
 
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -11,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author： wuying23
  * @create： 2024/1/13 19:55
  */
-
+@Component
 public class AlphaInterceptor implements HandlerInterceptor {
 //    private static final Logger logger = LoggerFactory.getLogger(AlphaInterceptor.class);
 
