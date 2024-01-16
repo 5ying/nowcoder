@@ -135,6 +135,12 @@
 			<artifactId>kaptcha</artifactId>
 			<version>2.3.2</version>
 		</dependency>
+<!--		异步请求依赖包-->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.2.76</version>
+			</dependency>
 
 		<dependency>
 			<groupId>org.thymeleaf</groupId>

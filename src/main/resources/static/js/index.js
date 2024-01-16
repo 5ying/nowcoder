@@ -1,3 +1,4 @@
+
 $(function(){
 	$("#publishBtn").click(publish);
 });
