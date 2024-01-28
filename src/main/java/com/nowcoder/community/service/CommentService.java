@@ -54,6 +54,4 @@ public class CommentService implements CommunityConstant {
         }
         return rows;
     }
-
-
 }

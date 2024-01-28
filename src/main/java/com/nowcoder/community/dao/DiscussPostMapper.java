@@ -23,6 +23,12 @@ public interface DiscussPostMapper {
 
     DiscussPost selectDiscussPostById(int id);
 
+    /**
+     * 增加帖子的评论数量
+     * @param id
+     * @param commentCount
+     * @return
+     */
     int updateCommentCount(int id, int commentCount);
 
     int updateType(int id, int type);
